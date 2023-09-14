@@ -1,0 +1,64 @@
+body {
+    /* background-color: rgba(255, 205, 105, 1); */
+    background-color: rgb(211, 211, 241);
+    display: flex;
+    justify-content: center;
+    
+}
+
+#card {
+    height: 440px;
+    width: 310px;
+    background-color: white;
+    border-radius: 10px;
+    border: 3px solid black;
+    margin-top: 80px;
+    position: relative;
+    
+}
+
+#stories {
+    height: 100px;
+    width: 100%;
+    border-bottom: 1px solid #dadada;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#stories::-webkit-scrollbar{
+    display: none;
+}
+
+.story {
+    height: 80px;
+    width: 80px;
+    border: 3px solid rgba(235, 65, 65, 1);
+    border-radius: 50%;
+    display: inline-block;
+    margin: 8px 2px 2px 2px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.story img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    
+}
+
+#card h2 {
+    color: crimson;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 80px;
+}
+
+#fullScreen {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: absolute;
+    background-size: cover;
+}
